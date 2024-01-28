@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+:root {
+  --primary-color: #dc2626;
+  --primary-color-dark: #b91c1c;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-height: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  height: var(--header-height);
+}
+
+header .home-nav span {
+  font-weight: 600;
+  font-size: 18px;
+  /* line-height: 1.2; */
+  color: var(--text-dark);
+}
+
+header form {
+  height: 32px;
+  display: flex;
+}
+
+header form input {
+  font-size: 18px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding-left: 10px;
+}
+
+header form button {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 3px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header .profile-nav button {
+  /* padding: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgb(31, 173, 38);
+  color: white;
+  border: none;
+}
+
+/* End of Header */
+
+/* Navbar */
+nav {
+  width: 200px;
+  height: calc(100vh - var(--header-height));
+  background-color: aqua;
+  flex: 0 0 200px;
+}
+/* End of Navbar */
+
+/* Homescreen */
+.home-screen {
+  display: flex;
+}
+
+.home-screen .cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: calc(100vh - var(--header-height));
+}
+/* End of Homescreen */
+
+/* SmallCard */
+.small-card {
+  margin: 10px;
+  /* border: 1px solid green; */
+  width: 300px;
+  aspect-ratio: 16/9;
+  /* border-radius: 10px; */
+}
+
+.small-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.small-card p {
+  overflow: hidden;
+  display: -webkit-box;
+
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* End of SmallCard */
